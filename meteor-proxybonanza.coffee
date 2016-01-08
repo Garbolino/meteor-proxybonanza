@@ -49,16 +49,16 @@ Meteor.methods
       userpackage_id: packageId
 
     try
-      result = HTTP.call "GET", apiUrl, options
+      result = HTTP.call "POST", apiUrl, options
       return result
     catch error
       return error
     return
 
-  'deleteAuthIPfromPackage': (ip) ->
-    check(ip, String)
+  'deleteAuthIPfromPackage': (ipId) ->
+    check(ipId, String)
     @unblock()
-    apiUrl = "https://api.proxybonanza.com/v1/authips/#{ip}.json"
+    apiUrl = "https://api.proxybonanza.com/v1/authips/#{ipId}.json"
     try
       result = HTTP.del apiUrl, options
       return result
