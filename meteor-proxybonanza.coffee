@@ -1,7 +1,7 @@
 try
   apiKey = Meteor.settings.proxyBonanza.api_key
 catch error
-  console.log("***ProxyBonanza: You need to add proxybonanza API key")
+  console.log("***ProxyBonanza: You need to provide a proxybonanza API key")
 
 options =
   headers:
