@@ -1,6 +1,6 @@
 Package.describe({
   name: 'garbolino:meteor-proxybonanza',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'A Meteor package designed to easily handle ProxyBonanza API request.',
   git: 'https://github.com/garbolino/meteor-proxybonanza.git',
   author: "Orlando Martinez <orlando@rollingmute.com>",
@@ -18,7 +18,8 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('ecmascript');
+  api.use('coffeescript');
   api.use('tinytest');
   api.use('garbolino:meteor-proxybonanza');
-  api.addFiles('meteor-proxybonanza-tests.js');
+  api.addFiles('meteor-proxybonanza-tests.coffee');
 });

@@ -11,8 +11,8 @@ A Meteor package designed to easily handle ProxyBonanza API request.
 * check
 
 ##<a name="usage"></a>  Usage
-Add to Meteor Settings your ProxyBonanza API key:
-  Meteor.settings.proxyBonanza.api_key
+* Add to Meteor Settings your ProxyBonanza API key:
+  - Meteor.settings.proxyBonanza.api_key
 
 * Meteor.call('getUserPackages')
   -  GET https://api.proxybonanza.com/v1/userpackages.json
@@ -35,6 +35,3 @@ Add to Meteor Settings your ProxyBonanza API key:
 * Meteor.call('getPackageHourlyStats', packageId)
   -  GET https://api.proxybonanza.com/v1/userpackagehourlystats/[userpackage ID].json
   -  Data transfer for the last 24 hours.
-
-##<a name="todo"></a>  TODO
-* Tests
